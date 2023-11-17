@@ -2,11 +2,11 @@
 require File.expand_path('../lib/mongoid/multitenancy/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ['Aymeric Brisse']
-  gem.email         = ['aymeric.brisse@mperfect-memory.com']
+  gem.authors       = ['Aymeric Brisse', 'Tim Kleier']
+  gem.email         = ['timkleier@gmail.com']
   gem.description   = 'MultiTenancy with Mongoid'
   gem.summary       = 'Support of a multi-tenant database with Mongoid'
-  gem.homepage      = 'https://github.com/PerfectMemory/mongoid-multitenancy'
+  gem.homepage      = 'https://github.com/upgrade-solutions/mongoid-multitenancy'
   gem.license       = 'MIT'
   gem.files         = `git ls-files`.split($OUTPUT_RECORD_SEPARATOR)
   gem.executables   = gem.files.grep(%r{^bin/}).map { |f| File.basename(f) }
@@ -15,5 +15,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.version       = Mongoid::Multitenancy::VERSION
 
-  gem.add_dependency('mongoid', '>= 6', '< 8')
+  gem.add_dependency('mongoid', '>= 6', '< 9')
 end
